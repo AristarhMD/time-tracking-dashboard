@@ -29,8 +29,8 @@
     --color-navy-900: #1c204b;
     --color-navy-800: #33397a;
     --color-navy-200: #bbc0ff;
-    --animate-move-out: move-out 0.3s ease-out;
-    --animate-move-in: move-in 0.3s ease-out;
+    --animate-move-out: move-out 0.4s ease-out;
+    --animate-move-in: move-in 0.4s ease-out;
   }
 }
 @layer base {
@@ -182,9 +182,6 @@
   }
 }
 @layer utilities {
-  .visible {
-    visibility: visible;
-  }
   .absolute-position {
     position: absolute;
     inset-inline: calc(var(--spacing) * 0);
@@ -308,21 +305,6 @@
   }
   .bg-\[url\(\'images\/icon-\$\{icon\}\.svg\'\)\] {
     background-image: url('images/icon-${icon}.svg');
-  }
-  .bg-\[url\(\'images\/icon-exercise\.svg\'\)\] {
-    background-image: url('images/icon-exercise.svg');
-  }
-  .bg-\[url\(\'images\/icon-play\.svg\'\)\] {
-    background-image: url('images/icon-play.svg');
-  }
-  .bg-\[url\(\'images\/icon-selfcare\.svg\'\)\] {
-    background-image: url('images/icon-selfcare.svg');
-  }
-  .bg-\[url\(\'images\/icon-social\.svg\'\)\] {
-    background-image: url('images/icon-social.svg');
-  }
-  .bg-\[url\(\'images\/icon-study\.svg\'\)\] {
-    background-image: url('images/icon-study.svg');
   }
   .bg-\[url\(\'images\/icon-work\.svg\'\)\] {
     background-image: url('images/icon-work.svg');
@@ -460,11 +442,6 @@
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
-  .md\:flex-col {
-    @media (width >= 48rem) {
-      flex-direction: column;
-    }
-  }
   .md\:place-items-center {
     @media (width >= 48rem) {
       place-items: center;
@@ -473,11 +450,6 @@
   .md\:items-center {
     @media (width >= 48rem) {
       align-items: center;
-    }
-  }
-  .md\:items-start {
-    @media (width >= 48rem) {
-      align-items: flex-start;
     }
   }
   .md\:justify-center {
